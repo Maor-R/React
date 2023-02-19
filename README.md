@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App]( voting-application-maor.netlify.app/ ).
+This project was bootstrapped with [Create React App]( https://voting-application-maor.netlify.app/).
 
 ## Available Scripts
 

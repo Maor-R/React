@@ -1,43 +1,31 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from "react";
+import "./styles/App.css";
 
-import { PAGES } from './constants';
-import {partiesVotesAmount} from './data';
-
-import { Admin, Login, Voting } from './pages';
-
-import './styles/App.css'
-
-const userData = localStorage.getItem('userData') ? JSON.parse(localStorage.getItem('userData')) : null;
-localStorage.setItem('partiesVotesAmount', JSON.stringify(partiesVotesAmount));
-
+import libBWImg from "../src/assets/images/1.bmp";
+import libColorImg from "../src/assets/images/1.jpg";
 const App = () => {
-  const [page, setPage] = useState('login');
+  const replaceImg = useRef();
 
-  const [ login, admin, voting] = PAGES;
-
-  useEffect(() => {
-    if (!userData) {
-      setPage(login);
-    } else if((userData.type == 'admin' && !userData.isVote) ||
-    userData.type == 'user') {
-      setPage(voting);
+  const replaceImgFunc = (color) => {
+    if (color === 'black') {
+      replaceImg.current.src = libBWImg;
+    } else {
+      replaceImg.current.src = libColorImg;
     }
-    else if (userData.type == 'admin'){
-      setPage(admin);
-    }
-  }, [login, voting, admin]);
+  };
 
-  switch (page) {
-    case login:
-      return <Login setPage={setPage} />;
-    case admin:
-      return <Admin setPage={setPage} />;
-    case voting:
-      return <Voting setPage={setPage} />;
-    default:
-      return <Login setPage={setPage} />;
-  }
-
+  return (
+    <img 
+      onMouseLeave={() => {
+        replaceImgFunc("black");
+      }}
+      onMouseOver={() => {
+        replaceImgFunc("color");
+      }}
+      src={libColorImg}
+      ref={replaceImg}
+    ></img>
+  );
 };
 
 export default App;
