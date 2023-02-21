@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.Box{
+  background-color: darkorchid;
+  width: 10rem;
+  height: 10rem;
+
+}
+
+.Circle{
+  background-color: darkorchid;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+
+}
+
