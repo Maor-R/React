@@ -1,9 +1,19 @@
-# Getting Started with Create React App
+# REACT – Voting Application
 
-This project was bootstrapped with [Create React App]( https://voting-application-maor.netlify.app/).
+This project was bootstrapped with 
+[Site demo.](https://obrm-dating-app.netlify.app)
+## Summary
 
-## Available Scripts
+I build a voting application in React.
 
+  • This application allows users to login, and vote for
+one of the parties.
+
+  • Each vote that a party gets - will be shown.
+  
+  • The first party to reach X votes - wins!
+  
+  
 In the project directory, you can run:
 
 ### `npm start`
@@ -39,3 +49,4 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
+# Todo-CRUD-App
