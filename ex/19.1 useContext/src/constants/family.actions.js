@@ -1,0 +1,3 @@
+export const FAMILY_ACTIONS = {
+  UPDATE_GIFTS: 'UPDATE_GIFTS'
+};
