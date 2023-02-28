@@ -1,21 +1,12 @@
 import React from 'react'
-import Home from "./components/Home";
-import About from "./components/About"
-import "./index.css"
+import Home from "./Home";
+import About from "./About"
 
-import SharedLayout from "./components/SharedLayout"
+import SharedLayout from "./SharedLayout"
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
-import { useGlobalContext } from "./context/context";
-
-
-function App() {
-  const {
-    backgroundColor,
-  } = useGlobalContext();
-
+function Grandfather() {
   return (
-    <div className='container' style={{backgroundColor:backgroundColor}}>
+    <>
   
     <Router
 >
@@ -29,8 +20,8 @@ function App() {
           </Route>
         </Routes>
     </Router>
-    </div>
+    </>
   )
 }
 
-export default App;
+export default Grandfather

@@ -12,7 +12,6 @@ const partiesVotesAmount = JSON.parse(
   localStorage.getItem("partiesVotesAmount")
 );
 const Admin = ({ setPage }) => {
-
   let data = [];
   for (let i = 0; i < users.length; i++) {
     const rand = Math.random() > 0.5 ? true : false;
@@ -44,7 +43,7 @@ const Admin = ({ setPage }) => {
       }
     }
     usersData[i].didVote = false;
-
+    setSum((prevSum) => prevSum - 1);
     setUsersData(usersData);
   };
 
