@@ -1,8 +1,17 @@
 import { NavLink } from "react-router-dom";
+import { useGlobalContext } from "../context/context";
 
+const Header = () => {
+  const {
+    btnText,
+    btnColor,
+    btnBGColor,
+    changeDayNight
+  } = useGlobalContext();
 
-function Header () {
- 
+  const updateStatus = ()=>{
+    changeDayNight();
+  }
 
   return (
     <nav className="navbar" >
@@ -18,6 +27,7 @@ function Header () {
       >
         Products
       </NavLink>
+      <button style={{backgroundColor:btnBGColor, color:btnColor}} onClick={updateStatus}>{btnText}</button>
     </nav>
   );
 };

@@ -5,7 +5,6 @@ Variables
 */
 .container{
   height: 100vh;
-  background-color:rgb(146, 164, 214);
 }
 :root {
   --clr-primary: #2680c0;
@@ -39,7 +38,6 @@ body {
 }
 a {
   text-decoration: none;
-  color: white;
 }
 img {
   width: 100%;
@@ -49,8 +47,8 @@ h1,
 h2,
 h3,
 h4 {
-  /* letter-spacing: var(--spacing); */
-  /* text-transform: capitalize; */
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
   line-height: 1.25;
   margin-bottom: 0.75rem;
 }
@@ -132,7 +130,7 @@ h1{
 }
 
 .navbar {
-  width: 100vw;
+  width: 90vw;
   max-width: var(--max-width);
   margin: 0 auto;
   display: flex;
@@ -143,23 +141,18 @@ h1{
   margin-top: 1rem;
   border-radius: 0.3rem;
   padding: 0.9rem;
-  background-color: rgb(98, 82, 198);
 }
 
 .link {
-  color: black;
+  color: white;
 }
 
 .active {
-  color: white;
+  color: yellow;
 }
 
 button{
   background-color: white;  
-  padding: 0.5rem;
-  color: black;
-  font-size: medium;
-  font-weight: bold;
 }
 
 .product-title{
@@ -167,9 +160,6 @@ padding-left: 1rem;
 
 }
 
-.pad-bottom{
-  padding-bottom: 1rem ;
-}
 .m_auto{
   margin: auto;
   text-align: center;
